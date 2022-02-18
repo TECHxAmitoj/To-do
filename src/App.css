@@ -24,10 +24,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +31,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#new-todo-item {
+  margin-right: 10px;
+}
+
+#todo-checkbox {
+  margin-right: 10px;
+}
+
+.btn_submit {
+  border-radius: 50px;
+  background-color: #32e058;
+}
+
+#btn-text {
+  color: blue;
+  font-weight: bolder;
+  font-size: medium;
 }
