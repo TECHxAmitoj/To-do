@@ -46,6 +46,16 @@
   background-color: #32e058;
 }
 
+#clear-btn {
+  width: 25%;
+  float: right;
+}
+
+
+#clear {
+  float: right;
+}
+
 #btn-text {
   color: blue;
   font-weight: bolder;

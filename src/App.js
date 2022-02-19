@@ -19,15 +19,30 @@ function App() {
     setTodoItems([...todoItems, newTodoItem]);
   }
 
+  function clearList() {
+    setTodoItems([]);
+  }
+
+  const clearButton = todoItems.length > 0 ? 
+  (
+    <button type="submit" className="btn" id="clear" onClick={clearList}>
+      Clear List
+    </button>
+  ) : (<></>);
+
   return (
       <div className="App">
         <header className="App-header">
           <img src={todo}/>
           <h1>To-Do List</h1>
-          <ToDoForm addTaskToList={addTaskToList}/>
-          <ul>
-            {taskList}
-          </ul>
+          <div>
+            <ToDoForm addTaskToList={addTaskToList}/>
+            <ul>
+              {taskList}
+            </ul>
+            {clearButton}
+          </div>
+          <br/><br/>
         </header>
       </div>
   );
